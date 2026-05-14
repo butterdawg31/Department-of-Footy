@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Department of Footy creates tools and looks at statistics about the Australian Football League."
+    />
+    <title>Department of Footy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand-bar" aria-label="Main header">
+        <a class="brand" href="/" aria-label="Department of Footy home">
+          <span class="brand-mark" aria-hidden="true">D</span>
+          <span>Department of Footy</span>
+        </a>
+
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode">
+          <span class="theme-symbol theme-symbol-sun" aria-hidden="true">☼</span>
+          <span class="theme-track" aria-hidden="true">
+            <span class="theme-thumb"></span>
+          </span>
+          <span class="theme-symbol theme-symbol-moon" aria-hidden="true">☾</span>
+        </button>
+      </div>
+
+      <nav class="nav-bar" aria-label="Website sections">
+        <div class="nav-menu">
+          <button class="nav-trigger" type="button" aria-haspopup="true" aria-expanded="false">Statistics</button>
+          <div class="nav-menu-list">
+            <a href="#player-ratings">Player Ratings</a>
+            <a href="#player-value">Player Value</a>
+          </div>
+        </div>
+
+        <div class="nav-menu">
+          <button class="nav-trigger" type="button" aria-haspopup="true" aria-expanded="false">Simulators</button>
+          <div class="nav-menu-list">
+            <a href="#reset-draft">Reset Draft</a>
+            <a href="#create-draft-class">Create a Draft class</a>
+            <a href="#real-season">Real season</a>
+          </div>
+        </div>
+
+        <div class="nav-menu">
+          <button class="nav-trigger" type="button" aria-haspopup="true" aria-expanded="false">Analysis</button>
+          <div class="nav-menu-list">
+            <a href="#player-archetypes">Player Archetypes</a>
+            <a href="#team-archetypes">Team Archetypes</a>
+            <a href="#rebuild-ladder">Rebuild ladder</a>
+          </div>
+        </div>
+
+        <div class="nav-menu">
+          <button class="nav-trigger" type="button" aria-haspopup="true" aria-expanded="false">Tools</button>
+          <div class="nav-menu-list">
+            <a href="#trade-calculator">Trade calculator</a>
+          </div>
+        </div>
+
+        <div class="nav-menu">
+          <button class="nav-trigger" type="button" aria-haspopup="true" aria-expanded="false">Expansion</button>
+          <div class="nav-menu-list">
+            <a href="#20th-team">20th team</a>
+            <a href="#expansion-options">Expansion Options</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-inner">
+          <h1 id="page-title">
+            <span class="hero-prelude">Welcome to the</span>
+            <span class="hero-brand-name">Department of Footy</span>
+          </h1>
+          <p class="hero-copy">
+            This agency creates tools and looks at statistics about the Australian Football League
+          </p>
+          <p class="site-intro">
+            I think list building is really interesting and given the amount of attention AFL Free
+            Agency and the Trade Period gets (and trade radio...), I'd say others do too!
+          </p>
+          <p class="site-intro site-intro-follow">
+            There is SO much more analysis that could be done for AFL list building - I want to try
+            quantity and properly assess what decisions list managers should be making.
+          </p>
+          <div class="tool-tiles" aria-label="Available tools">
+            <a class="tool-tile" href="#reset-draft">
+              <span class="tool-title">Reset Draft</span>
+              <span class="tool-copy">Run a fresh draft order and rebuild scenario.</span>
+              <span class="tool-link">Open tool <span aria-hidden="true">→</span></span>
+            </a>
+            <a class="tool-tile" href="#player-ratings">
+              <span class="tool-title">Overall Player Ratings</span>
+              <span class="tool-copy">View the full player rating model in one place.</span>
+              <span class="tool-link">View ratings <span aria-hidden="true">→</span></span>
+            </a>
+            <a class="tool-tile" href="#player-value">
+              <span class="tool-title">Player Value</span>
+              <span class="tool-copy">Compare how player output translates into value.</span>
+              <span class="tool-link">Compare value <span aria-hidden="true">→</span></span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
